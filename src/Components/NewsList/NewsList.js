@@ -1,5 +1,5 @@
 import React,{useEffect, useState} from 'react'
-import { NavItem } from 'react-bootstrap'
+// import { NavItem } from 'react-bootstrap'
 
 export default function NewsList() {
   const [news, setNews] = useState([])

@@ -16,8 +16,7 @@ export default function Card(props) {
                 <div className="card-body">
                     <h5 className="card-title">{props.title}</h5>
                     <p className="card-text">{props.author}</p>
-                    <a href={props.url} className="btn btn-primary">Read Now</a>
-                    <br /><br />
+                    <a href={props.url} target="_blank" className="btn btn-primary mx-2">Read Now</a>
                     <button type="submit" className="btn btn-primary" onClick={() => {
                         saveNews();
                     }}>Read Later</button>
