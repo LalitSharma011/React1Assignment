@@ -41,7 +41,7 @@ export default function Dashboard() {
       };
 
   return (
-    <div className="container">
+    <div data-testid="dashboardId" className="container">
         
         {
         news.map((item) => <Card urlToImage={item.urlToImage} title={item.title} author={item.author} readLater={readLater} description={item.description} url={item.url}/>)

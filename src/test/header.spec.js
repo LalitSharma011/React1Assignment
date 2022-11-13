@@ -8,7 +8,7 @@ describe("Testing Header Component",()=>{
     test("demo test", ()=>{
         console.log("Test executed");
     })
-    test("Should have navbar text in header",()=>{
+    test("Should have NatWest text in header",()=>{
     render(<Header/>)
     expect(screen.getByText("NatWest")).toBeInTheDocument()
 })
@@ -18,7 +18,7 @@ describe("Testing Header Component",()=>{
     test("demo test", ()=>{
         console.log("Test executed");
     })
-    test("Should have navbar Home in header",()=>{
+    test("Should have Home text in header",()=>{
     render(<Header/>)
     expect(screen.getByText("Home")).toBeInTheDocument()
 })
