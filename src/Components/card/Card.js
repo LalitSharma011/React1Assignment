@@ -10,7 +10,7 @@ export default function Card(props) {
     };
 
     return (
-        <div className="container py-4">
+        <div className="container my-4">
             <div className="card" style={{ width: "18rem" }}>
                 <img src={props.urlToImage} className="card-img-top" alt="..." />
                 <div className="card-body">

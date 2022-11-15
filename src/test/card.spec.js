@@ -5,15 +5,15 @@ import React from 'react'
 import {render as renderer, unmountComponentAtNode} from 'react-dom'
 // please add your test cases here
 
-describe("Testing Card Component",()=>{
-    test("demo test", ()=>{
-        console.log("Test executed");
-    })
+// describe("Testing Card Component",()=>{
+//     test("demo test", ()=>{
+//         console.log("Test executed");
+//     })
     test("Should have Read Later text in Card",()=>{
     render(<Card/>)
     expect(screen.getByText("Read Later")).toBeInTheDocument()
 })
-})
+// })
 
 let element;
 beforeEach(()=>{

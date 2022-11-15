@@ -16,6 +16,12 @@ afterEach(() => {
     element = null
 })
 
+describe("Testing Dashboard Component",()=>{
+    test("demo test", ()=>{
+        console.log("Test executed");
+    })
+})
+
 it("Should have 1 div tab in Dashboard component", () => {
     renderer(<Dashboard />, element)
     const count = element.getElementsByTagName('div').length
@@ -36,15 +42,10 @@ test("div tag should have container class",()=>{
 })
 
 describe("Testing Dashboard Component",()=>{
-    test("demo test", ()=>{
-        console.log("Test executed");
+        test("demo test", ()=>{
+            console.log("Test executed");
+        })
     })
-    test("Should POST text in Dashboard",()=>{
-    render(<Dashboard/>)
-    expect(screen.getByDisplayValue("readLater")).toBeInTheDocument()
-})
-})
-
 
 
 export default Dashboard;

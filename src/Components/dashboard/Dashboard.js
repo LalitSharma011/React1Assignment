@@ -41,12 +41,10 @@ export default function Dashboard() {
       };
 
   return (
-    <div data-testid="dashboardId" className="container">
-        
+    <div data-testid="dashboardId" id="dataStore" name="dataStoreName" className="container">
         {
         news.map((item) => <Card urlToImage={item.urlToImage} title={item.title} author={item.author} readLater={readLater} description={item.description} url={item.url}/>)
         }
-        
     </div>
     )
 }
