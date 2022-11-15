@@ -16,12 +16,6 @@ afterEach(() => {
     element = null
 })
 
-describe("Testing Dashboard Component",()=>{
-    test("demo test", ()=>{
-        console.log("Test executed");
-    })
-})
-
 it("Should have 1 div tab in Dashboard component", () => {
     renderer(<Dashboard />, element)
     const count = element.getElementsByTagName('div').length
@@ -33,19 +27,23 @@ test("Should have container class in dashboardId", () => {
     expect(screen.getByTestId("dashboardId")).toHaveClass("container")
 })
 
-test("div tag should have container class",()=>{
-    renderer(<Dashboard/>,element)
-    const links=element.getElementsByTagName("div")
+test("div tag should have container class", () => {
+    renderer(<Dashboard />, element)
+    const links = element.getElementsByTagName("div")
     for (let index = 1; index < links.length; index++) {
         expect(links[index]).toHaveClass("container")
     }
 })
 
-describe("Testing Dashboard Component",()=>{
-        test("demo test", ()=>{
-            console.log("Test executed");
-        })
-    })
+test("Should have Search URL in Dashboard", () => {
+    render(<Dashboard />)
+    expect(screen.getByText("https://newsapi.org/v2/top-headlines?country=in&apiKey=7173bb0ecf214c62a37cb63362f13c0e")).toBeInTheDocument();
+})
+
+test("Should have Search URL in Dashboard", () => {
+    render(<Dashboard />)
+    expect(screen.getByText("7173bb0ecf214c62a37cb63362f13c0e")).toBeInTheDocument();
+})
 
 
 export default Dashboard;
